@@ -13,6 +13,9 @@ public class Task03 {
         int a = sc.nextInt();
         int b = sc.nextInt();
         int count = 0;
+        if (a >= b) {
+            System.out.println("Некорректный ввод");
+        } else
         while (count < b) {
             count++;
             if (count % 5 == 0 && count % 10 != 0) {

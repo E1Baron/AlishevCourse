@@ -33,16 +33,16 @@ import java.util.Scanner;
 public class Task01 {
     public static void main(String[] args) {
         while (true) {
-            String countryName;
+            String cityName;
             System.out.println("Введите название города для определения страны, " +
                     "или введите\nслово" + " stop для прекращения работы программы:");
             Scanner sc = new Scanner(System.in);
-            countryName = sc.nextLine();
-            if (countryName.equals("stop")) {
+            cityName = sc.nextLine();
+            if (cityName.equals("stop")) {
                 System.out.println("Завершение работы программы");
                 break;
             }
-            switch (countryName) {
+            switch (cityName) {
                 case "Москва":
                 case "Владивосток":
                 case "Ростов":

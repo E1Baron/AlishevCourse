@@ -21,9 +21,10 @@ import java.util.Scanner;
 public class Task02 {
     public static void main(String[] args) {
         while (true){
-            System.out.println("Введите два числа через пробел, первое это делимое, второе" +
-                    " это делитель и нажмите ENTER\n" +
-                    "Если вы введёте в качестве делителя цифру 0, работа программы завершится");
+            System.out.println("""
+            Введите два числа через пробел, первое это делимое,
+            второе это делитель, и нажмите ENTER
+            Если вы введёте в качестве делителя цифру 0, работа программы завершится""");
             Scanner sc = new Scanner(System.in);
             double dividend = sc.nextDouble();
             double divider = sc.nextDouble();

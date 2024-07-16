@@ -22,7 +22,7 @@ public class Task02 {
         int[] massive = new int[100];
         for (int i = 0; i < massive.length; i++)
             massive[i] = rand.nextInt(10000);
-        int max = 0;
+        int max = Integer.MIN_VALUE;
         for (int element : massive) {
             if (element > max)
                 max = element;
@@ -30,7 +30,7 @@ public class Task02 {
         System.out.println(Arrays.toString(massive));
         System.out.println("Наибольший элемент массива: " + max);
 
-        int min = 10000 + 1;
+        int min = Integer.MAX_VALUE;
         for (int element : massive) {
             if (element < min)
                 min = element;
@@ -45,7 +45,6 @@ public class Task02 {
                 massElementsSumCounter = massElementsSumCounter + element;
             }
         }
-
         System.out.println("Количество элементов массива, оканчивающихся на 0: " + massZeroEndsCounter);
         System.out.println("Cумма элементов массива, оканчивающихся на 0: " + massElementsSumCounter);
     }

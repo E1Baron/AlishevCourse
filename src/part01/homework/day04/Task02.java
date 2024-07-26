@@ -16,8 +16,8 @@ import java.util.Random;
  */
 public class Task02 {
     public static void main(String[] args) {
-//
-//
+
+
         Random rand = new Random();
         int[] massive = new int[100];
         for (int i = 0; i < massive.length; i++)

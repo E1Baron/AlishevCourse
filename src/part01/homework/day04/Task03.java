@@ -21,10 +21,10 @@ public class Task03 {
         int maxsum = 0;
         int maxSumIndx = 0;
         Random rand = new Random();
-        int[][] massive = new int[3][3];
+        int[][] massive = new int[12][8];
         for (int i = 0; i < massive.length; i++) {
             for (int j = 0; j < massive[i].length; j++) {
-                massive[i][j] = rand.nextInt(5);
+                massive[i][j] = rand.nextInt(50);
             }
         }
         for (int i = 0; i < massive.length; i++) {
@@ -38,7 +38,7 @@ public class Task03 {
             }
         }
         System.out.println(maxSumIndx);
-        /**
+        /*
          Для большего понимания и проверки вывел сам массив - дважды
          */
         for (int[] a : massive) {

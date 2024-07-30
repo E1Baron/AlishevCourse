@@ -28,7 +28,8 @@ public class Task02 {
         int b = sc.nextInt();
         if (a >= b) {
             System.out.println("Некорректный ввод");
-        } else
+        }
+        else
             for (int i = a; i < b; i++) {
                 if (i % 5 == 0 && i % 10 != 0) {
                     System.out.print(i + " ");

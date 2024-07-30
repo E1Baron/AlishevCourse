@@ -35,7 +35,7 @@ public class Task01 {
         while (true) {
             String cityName;
             System.out.println("""
-                    Введите название города для определения страны,
+                    Введите название города (с большой буквы) для определения страны,
                     или введите слово stop для прекращения работы программы""");
             Scanner sc = new Scanner(System.in);
             cityName = sc.nextLine();

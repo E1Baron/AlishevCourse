@@ -35,33 +35,33 @@ public class Task01 {
         while (true) {
             String cityName;
             System.out.println("""
-                    Введите название города (с большой буквы) для определения страны,
+                    Введите название города для определения страны,
                     или введите слово stop для прекращения работы программы""");
             Scanner sc = new Scanner(System.in);
-            cityName = sc.nextLine();
-            if (cityName.equals("stop")) {
+            cityName = sc.nextLine().toLowerCase();
+            if (cityName.equalsIgnoreCase("stop")) {
                 System.out.println("Завершение работы программы");
                 break;
             }
             switch (cityName) {
-                case "Москва":
-                case "Владивосток":
-                case "Ростов":
+                case "москва":
+                case "владивосток":
+                case "ростов":
                     System.out.println("Россия");
                     break;
-                case "Рим":
-                case "Милан":
-                case "Турин":
+                case "рим":
+                case "милан":
+                case "турин":
                     System.out.println("Италия");
                     break;
-                case "Ливерпуль":
-                case "Манчестер":
-                case "Лондон":
+                case "ливерпуль":
+                case "манчестер":
+                case "лондон":
                     System.out.println("Англия");
                     break;
-                case "Берлин":
-                case "Мюнхен":
-                case "Кёльн":
+                case "берлин":
+                case "мюнхен":
+                case "кёльн":
                     System.out.println("Германия");
                     break;
                 default:
